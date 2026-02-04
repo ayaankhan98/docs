@@ -70,6 +70,13 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
+    title: "Mobile Testing",
+    href: "/mobile-testing",
+    items: [
+      { title: "Create Mobile test case", href: "/create-mobile-testcase" },
+    ],
+  },
+  {
     title: "Executions",
     href: "/executions",
     items: [
@@ -92,7 +99,7 @@ export const ROUTES: EachRoute[] = [
       { title: "Email", href: "/email" },
       { title: "Jira", href: "/jira" },
       { title: "Github", href: "/github" },
-      {title: "Authenticator Apps", href:'/authenticator-apps'}
+      { title: "Authenticator Apps", href: '/authenticator-apps' }
     ],
   },
   {
