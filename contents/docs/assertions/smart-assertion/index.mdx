@@ -1,0 +1,55 @@
+### Smart Assertion
+
+Smart Assertion allows you to define validations using simple, human-readable descriptions. Instead of manually configuring assertion rules, you describe what should be true about the selected UI element, and **Robonito** automatically interprets and applies the appropriate validation logic.
+
+This dialog appears when you choose **Smart Assertion** during recording or while editing a test step.
+![Smart Assertion](/test-case/smart-assertion1.png)
+
+### Create Smart Assertion
+
+The **Create Assertion** dialog enables you to define intelligent assertions using natural language.
+
+
+### Assertion Description
+
+Enter a clear description of what should be true about the selected element.
+
+**Examples:**
+
+- “The login button should be visible and clickable”
+- “The error message should contain the text ‘Invalid credentials’”
+- “The submit button should be disabled”
+
+You can enter up to **500 characters**.
+
+
+### Instructions for Writing Smart Assertions
+
+To create an effective Smart Assertion:
+
+1. Select the target UI element on the page first
+2. Describe what you want to verify about the element
+3. Use clear and specific language such as:
+   - `should be visible`
+   - `should be clickable`
+   - `should contain text`
+4. Save the assertion once the description is complete
+
+The assertion is automatically evaluated during test execution.
+
+
+### Save Assertion
+
+Click **Save Assertion** to attach the smart assertion to the selected test step.
+
+During execution, Robonito evaluates the assertion and marks it as **passed** or **failed** in the execution report.
+
+
+### Benefits of Smart Assertions
+
+Smart Assertions provide:
+
+- Faster assertion creation
+- Reduced manual configuration
+- Clear, readable validations
+- Improved test maintainability

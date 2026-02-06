@@ -1,0 +1,83 @@
+
+### UI / Element-Based Assertions
+
+UI / Element-Based Assertions are used to validate the presence, visibility, count, and styling of specific UI elements on a page. These assertions ensure that UI components are rendered correctly and behave as expected during test execution.
+
+The **Add Assertion** dialog appears when you select **UI / Element-Based** under the assertion type while recording or editing a test step.
+![Text Assertions](/test-case/ui-assertion.png)
+
+### Choose Assertion Type – UI / Element-Based
+
+UI / Element-Based assertions focus on validating DOM elements rather than page content.
+
+Robonito supports the following UI assertion types:
+
+
+### Element Exists
+
+Asserts that a specific element exists in the DOM.
+
+- Validates that the element is present, regardless of visibility
+- Useful for ensuring required elements are rendered
+
+**Use case:**  
+Verify that a header, button, or container exists on the page.
+
+
+### Element Visible
+
+Asserts that a specific element is visible to the user.
+
+- Ensures the element is displayed on the screen
+- Useful for validating UI readiness before interactions
+
+**Use case:**  
+Confirm that a button or text is visible before clicking or reading it.
+
+
+### Element Count
+
+Validates the number of elements matching a selector.
+
+### Configuration Options
+
+- **Expected count value**
+
+**Use case:**  
+Verify the number of items in a list, table rows, or repeated UI components.
+
+
+### CSS Assertion
+
+Validates the value of a specific CSS property for an element.
+
+### Configuration Options
+
+- **CSS property name**
+- **Expected property value**
+
+**Use case:**  
+Ensure correct styling, such as color, font size, or visibility state.
+
+
+### Assertion Configuration
+
+Once a UI assertion type is selected, the **Configuration** panel becomes active.
+
+Depending on the selected assertion, you can configure:
+
+- **Expected Text*** – The expected value associated with the element
+- **Match Type** – How the value should be matched (e.g., Exact Match)
+- **Case Sensitive** – Enable for case-sensitive matching
+
+These settings define how Robonito evaluates the assertion during execution.
+
+
+### Add Assertion
+
+After configuring the assertion:
+
+1. Review the selected UI assertion and configuration
+2. Click **Add Assertion**
+
+The assertion is attached to the selected test step and evaluated during test execution. Results are displayed as **pass** or **fail** in the execution report.

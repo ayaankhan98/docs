@@ -8,10 +8,10 @@ export type EachRoute = {
 };
 
 export const ROUTES: EachRoute[] = [
-  {
-    title: "Quick Tour",
-    href: "/quick-tour",
-  },
+  // {
+  //   title: "Quick Tour",
+  //   href: "/quick-tour",
+  // },
   {
     title: "Installation",
     href: "/installation",
@@ -74,6 +74,16 @@ export const ROUTES: EachRoute[] = [
     href: "/mobile-testing",
     items: [
       { title: "Create Mobile test case", href: "/create-mobile-testcase" },
+    ],
+  },
+    {
+    title: "Assertions",
+    href: "/assertions",
+    items: [
+      { title: "Smart Assertion", href: "/smart-assertion" },
+      { title: "Page Assertion", href: "/page-assertion" },
+      { title: "Text Assertion", href: "/text-assertion" },
+      { title: "UI Assertion", href: "/ui-assertion" },
     ],
   },
   {
