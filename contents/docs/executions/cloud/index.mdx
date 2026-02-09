@@ -1,4 +1,156 @@
----
-title: 'Cloud'
-description: 'Learn how to validate API responses using assertions in Robonito.'
----
+### Cloud Execution
+
+Cloud Execution allows you to run test cases on Robonito’s cloud infrastructure instead of your local machine. This execution mode is designed for scalability, reliability, and team-based automation workflows.
+
+Cloud Execution is available as a premium feature.
+
+
+## Key Characteristics of Cloud Execution
+
+- Test cases are executed on Robonito-managed cloud infrastructure
+- No dependency on local system resources
+- Provides a consistent and controlled execution environment
+- Suitable for large test suites and team-based execution
+- Ideal for continuous integration and scheduled runs
+
+
+### When to Use Cloud Execution
+
+Cloud Execution is recommended when:
+
+- Running tests as part of CI/CD pipelines
+- Executing large or complex test suites
+- Multiple team members need shared execution environments
+- Local system resources are limited
+- Tests need to run independently of user machines
+
+
+### Cloud Execution Availability
+
+If Cloud Execution is not enabled for your account:
+
+- The **Execute** button is disabled
+- A message indicates that Cloud Execution is locked
+- Options are provided to request access:
+  - Contact Email
+  - Contact Slack
+
+Once enabled, Cloud Execution becomes selectable in the execution configuration.
+
+
+### Cloud Execution Behavior
+
+During cloud execution:
+
+- Test steps are executed sequentially on cloud resources
+- All assertions (Smart, UI, Page, Content-based) are evaluated
+- Execution progress is tracked remotely
+- Results are collected and stored centrally
+
+
+### Execution Report – Cloud Execution
+
+The Execution Report for Cloud Execution provides detailed insights into test runs executed on the cloud. It helps teams monitor test stability, execution performance, and historical trends.
+
+A cloud execution report is generated automatically after each cloud run.
+
+
+### Report Overview
+
+The top section of the cloud execution report displays:
+
+### Total Runs
+
+Total number of cloud executions for the test case.
+
+
+### Passed
+
+Number of successful cloud executions.
+
+
+### Failed
+
+Number of failed cloud executions.
+
+
+### Average Duration
+
+Average time taken by cloud executions.
+
+
+### Test Case Health
+
+Test Case Health reflects the stability of the test case based on cloud execution history.
+
+- Calculated using pass/fail ratios
+- Helps identify flaky or unstable tests
+- Useful for monitoring long-term test reliability
+
+
+### Execution History
+
+The Execution History table includes details for each cloud execution run.
+
+### Date
+
+Time when the cloud execution was triggered.
+
+
+### Status
+
+Execution result:
+
+- PASS
+- FAIL
+
+
+### Type
+
+Test case type (Web, API, or Mobile).
+
+
+### Executed By
+
+User or system that triggered the execution (manual or CI).
+
+
+### Version
+
+Test case version executed in the cloud.
+
+
+### Environment
+
+Execution environment:
+
+- CLOUD
+
+
+### Browser
+
+Browser and version used in cloud execution.
+
+
+### Screen Size
+
+Viewport resolution used in the cloud run.
+
+
+### Platform
+
+Cloud execution platform details.
+
+
+### Runtime
+
+Total execution duration.
+
+
+## Understanding Cloud Execution Failures
+
+For failed cloud executions:
+
+- Failed steps and assertions are highlighted
+- Logs and execution details are available for analysis
+- Helps diagnose environment-specific or timing-related issues
