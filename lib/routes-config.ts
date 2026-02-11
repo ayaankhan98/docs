@@ -25,10 +25,10 @@ export const ROUTES: EachRoute[] = [
     title: "Workspace",
     href: "/workspace",
   },
-  {
-    title: "Suites",
-    href: "/suites",
-  },
+  // {
+  //   title: "Suites",
+  //   href: "/suites",
+  // },
   {
     title: "Test Case",
     href: "/test-case",
@@ -40,6 +40,10 @@ export const ROUTES: EachRoute[] = [
       {
         title: "Create web test case",
         href: "/create-web-test",
+      },
+      {
+        title: "Edit web test case",
+        href: "/edit-web-test",
       },
       {
         title: "Recording",
