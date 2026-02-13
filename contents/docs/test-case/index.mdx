@@ -2,104 +2,14 @@
 title: 'Introduction to a Test Case'
 description: 'Learn how to create a test case within a suite in Robonito.'
 ---
-### Introduction to Test Cases in Robonito
+### Test Cases in Robonito
 
-Test cases are critical components of Robonito, encompassing defined steps and expected outcomes that validate application functionalities. Robonito supports both API and UI test cases, facilitating comprehensive testing coverage.
+Test cases are the core building blocks of Robonito’s automation framework. Each test case represents a specific scenario consisting of defined configurations, steps, and expected outcomes used to validate application behavior. Robonito supports multiple types of test cases, enabling teams to automate different layers of application testing.
+
+Test cases are always created within a test suite, allowing logical grouping based on application modules or features.
 
 ### Test Case Types
-
-- **API Test Cases:** Validate the functionality and performance of application APIs.
-- **UI Test Cases:** Simulate user interactions with the UI to ensure correct functionality and usability.
-
-### Adding Test Cases to a Suite
-
-Test cases are systematically organized within suites according to functionality or modules. The type of test cases added depends on the suite type (Web or API).
-
-#### Adding a UI Test Case to a Web Suite:
-
-1. **Select a Web Suite:** Navigate to the suite management module and choose the desired web suite.
-2. **Access Add Test Case Option:** Click the ellipsis next to the suite name.
-3. **Open Add Test Case Dialog:** Select "Add test case" from the menu.
-4. **Enter Test Case Name:** Provide a descriptive name in the "Test case name" field.
-5. **Enter Description (Optional):** Include a brief description if necessary.
-6. **Add Test Case:** Click "Add" to create the test case.
-
-    ![Add Test Case Dialog](https://raw.githubusercontent.com/Robonito/docs/refs/heads/main/public/AddTestCaseDialog.png)
-
-### Configuring a UI Test Case
-
-Upon adding a test case, you will be directed to the configuration screen.
-![Test case Configration](/test-case/TestCaseConfigurationScreen.png)
-
-- **Test Case Details:** Review the test case name, description, and additional details such as browser used and timestamps.
-- **Browser Launch Options:** Customize browser settings for test execution.
-- **Test Case Steps:** Record or manually add steps to define the test actions.
-- **Test Case Actions:** Utilize action buttons to record, configure, execute, or view logs.
-- **Changes Saved Confirmation:** A confirmation message will indicate successful updates.
-
-
-### Test Case Configuration Drawer
-
-![Test Case Configuration Drawer](/test-case/TestCaseConfigurator.png)
-
-- **Configure Test Case:** Access the configuration drawer to set options.
-- **Browser Selection:** Choose the browser for execution.
-- **Dependency Management:** Mark test cases as dependencies for reuse.
-- **Target URL and Screen Size:** Specify the application URL and screen size.
-- **Timeout and Recording Options:** Set page load timeout and select video recording preferences.
-- **Save Configuration:** Click "Save" to apply changes.
-
-### Test Case Recording Options
-![Test Case Recording](/test-case/RecordingOptions.png)
-
-- **Recorder Access:** Click the "Recorder" button to initiate recording options.
-- **Recording Methods:** Select between traditional record & playback or AI-assisted recording.
-- **Future Enhancements:** Anticipate increased options for test case generation and automation.
-
-### Viewing Recorded Test Case Steps
-
-![Test Case Steps](/test-case/SelectTestCaseInSuite.png)
-
-- **Select Test Case:** Click on a recorded test case to view its steps.
-- **Test Case Steps Display:** Recorded steps will be displayed with descriptions and associated data.
-
-### Editing Test Case Steps
-
-![Edit Test Case Step](/test-case/EditStepInTestCase.png)
-
-- **Edit Step:** Adjust recorded steps as needed.
-- **Selectors and Data Values:** Modify selectors and data values, including random generation and OTPs.
-- **Save/Cancel:** Save changes or cancel edits.
-
-### Key Features of Test Cases
-
-- **Clear Definition:** Precisely defined steps and expected outcomes.
-- **Organization:** Structured within suites for effective management.
-- **Flexibility:** Supports both API and UI test cases.
-- **Configuration Options:** Diverse settings for test cases, including dependencies and recording.
-- **Execution and Logging:** Execute test cases and analyze logs.
-- **Dynamic Data Input:** Utilize random values, variables, and OTPs for enhanced adaptability.
-
-### Adding an API Test Case to an API Suite
-
-1. **Select an API Suite:** Navigate to the suite management module and choose the desired API suite.
-2. **Access Add Test Case Option:** Click the ellipsis next to the suite name.
-3. **Open Add Test Case Dialog:** Select "Add test case" from the menu.
-4. **Enter Test Case Name:** Provide a descriptive name in the "Test case name" field.
-5. **Enter Description (Optional):** Include a brief description if necessary.
-6. **Add Test Case:** Click "Add" to create the test case.
-
-![Add Test Case Dialog](/test-case/AddTestCaseDialog.png)
-
-5.  **Enter Test Case Name:**
-    * Provide a descriptive name for your test case in the "Test case name" field.
-6.  **Enter Description (Optional):**
-    * Provide a brief description of the test case in the "Description" field.
-7.  **Add Test Case:**
-    * Click the "Add" button to create the test case.
-
-### Configuring an API Test Case
-
-After adding, you will access a user-friendly interface to configure API test cases. Specify the API endpoint, request method, headers, request body, and expected response. Define assertions to validate response status, headers, and body content.
-
-**Note:** This documentation will be updated as Robonito evolves. Stay informed for more detailed instructions and feature updates.
+Robonito supports the following types of test cases, allowing comprehensive automation across different platforms:
+- **Web (UI) Test Cases:** Web test cases automate user interactions with web applications. These tests simulate actions such as clicking elements, filling forms, navigating pages, and validating UI behavior in real browsers. [How to create a web test case](/docs/web-testing/create-web-test).
+- **API Test Cases:** API test cases validate backend services by testing API endpoints. They help ensure correct request handling, response validation, performance, and reliability of application APIs. [How to create an API test case](/docs/api-testing/create-api-testcase).
+- **Mobile Test Cases:** Mobile test cases are used to automate testing for mobile applications. These tests validate functionality, UI behavior, and workflows on mobile devices. [How to create a Mobile test case](/docs/mobile-testing/create-mobile-testcase).

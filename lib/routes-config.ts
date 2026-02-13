@@ -8,10 +8,10 @@ export type EachRoute = {
 };
 
 export const ROUTES: EachRoute[] = [
-  {
-    title: "Quick Tour",
-    href: "/quick-tour",
-  },
+  // {
+  //   title: "Quick Tour",
+  //   href: "/quick-tour",
+  // },
   {
     title: "Installation",
     href: "/installation",
@@ -25,10 +25,10 @@ export const ROUTES: EachRoute[] = [
     title: "Workspace",
     href: "/workspace",
   },
-  {
-    title: "Suites",
-    href: "/suites",
-  },
+  // {
+  //   title: "Suites",
+  //   href: "/suites",
+  // },
   {
     title: "Test Case",
     href: "/test-case",
@@ -40,6 +40,10 @@ export const ROUTES: EachRoute[] = [
       {
         title: "Create web test case",
         href: "/create-web-test",
+      },
+      {
+        title: "Edit web test case",
+        href: "/edit-web-test",
       },
       {
         title: "Recording",
@@ -70,6 +74,23 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
+    title: "Mobile Testing",
+    href: "/mobile-testing",
+    items: [
+      { title: "Create Mobile test case", href: "/create-mobile-testcase" },
+    ],
+  },
+    {
+    title: "Assertions",
+    href: "/assertions",
+    items: [
+      { title: "Smart Assertion", href: "/smart-assertion" },
+      { title: "Page Assertion", href: "/page-assertion" },
+      { title: "Text Assertion", href: "/text-assertion" },
+      { title: "UI Assertion", href: "/ui-assertion" },
+    ],
+  },
+  {
     title: "Executions",
     href: "/executions",
     items: [
@@ -92,7 +113,7 @@ export const ROUTES: EachRoute[] = [
       { title: "Email", href: "/email" },
       { title: "Jira", href: "/jira" },
       { title: "Github", href: "/github" },
-      {title: "Authenticator Apps", href:'/authenticator-apps'}
+      { title: "Authenticator Apps", href: '/authenticator-apps' }
     ],
   },
   {
@@ -106,6 +127,10 @@ export const ROUTES: EachRoute[] = [
         href: "/configure-test-case",
       },
     ],
+  },
+  {
+    title: "Browser",
+    href: "/browsers",
   },
   {
     title: "Reports",

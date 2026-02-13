@@ -1,0 +1,111 @@
+# Execution Reports
+
+The Execution Reports section in Robonito provides a centralized view of all test executions. It allows you to monitor test activity, track failures, analyze execution trends, and review detailed results.
+
+Reports help teams maintain visibility into automation performance and quickly identify failing tests.
+
+![Execution Reports](/test-case/execution-reports.png)
+
+## Execution Trend Graph
+
+The chart visualizes test runs over time.
+
+It displays executions categorized by:
+
+- GithubCheckRun
+- Schedule
+- Suite
+- Testcase
+
+The graph helps you:
+
+- Identify execution frequency
+- Detect spikes in failures
+- Track activity trends across days
+- Monitor automation health
+
+
+## Failed Tests Panel
+
+On the right side, the Failed Tests panel highlights recently failed test cases.
+
+Each failed entry shows:
+
+- Test case name
+- Suite name
+- Time of failure
+- Failure reason
+- Environment (e.g., LOCAL)
+- Test type (WEB, API, etc.)
+- Tags (if applied)
+
+You can:
+
+- Click **Show more** to expand failure details
+- Click **view logs** to inspect execution logs
+
+This allows quick debugging without navigating through full reports.
+
+
+## Filters
+
+Robonito provides filtering options to refine report data:
+
+- Status (Passed, Failed, In Progress)
+- Environment (Local, Cloud)
+- Execution Type (Test case, Suite, Schedule)
+
+Filters help narrow down execution data for analysis.
+### Download
+
+Allows downloading execution logs or reports.
+
+## Viewing Execution Details
+
+Clicking on an execution entry opens detailed information, including:
+
+- Step-by-step execution results
+- Assertion results
+- Failure messages
+- Runtime data
+- Logs
+
+This enables deep inspection for debugging.
+
+
+## Failed Execution Example
+
+In case of failure (as shown in your UI):
+
+**Example:**
+
+Visual assertion FAILED check diff and actual image
+
+This indicates:
+
+- A visual comparison mismatch
+- UI change detected
+- Assertion failure during execution
+
+Users can inspect logs and screenshots to determine root cause.
+
+
+## Benefits of Execution Reports
+
+Execution Reports allow teams to:
+
+- Monitor automation activity
+- Track test stability
+- Identify flaky tests
+- Review execution history
+- Debug failures efficiently
+- Maintain quality assurance transparency
+
+
+## Best Practices for Reports
+
+- Regularly review failed tests panel
+- Monitor test case health trends
+- Use filters to isolate unstable tests
+- Investigate recurring visual or CSS assertion failures
+- Schedule automated runs and monitor report trends
